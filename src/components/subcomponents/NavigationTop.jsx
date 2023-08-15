@@ -1,4 +1,6 @@
-import { FaDollarSign, FaFacebook, FaGlobe, FaInstagram, FaLinkedin, FaTwitter, FaYoutube } from "react-icons/fa";
+import { FaCog, FaDollarSign, FaGlobe, FaLocationArrow, FaShoppingBasket } from "react-icons/fa";
+import { Link } from "react-router-dom";
+import SocialMediaList from "./SocialMediaList";
 
 export default function NavigationTop(params) {
     return (
@@ -18,12 +20,17 @@ export default function NavigationTop(params) {
                     </label>
                 </div>
                 <div className="navigation_right">
-                    <div className="social_networks_wrapper">
-                        <FaFacebook />
-                        <FaInstagram />
-                        <FaLinkedin />
-                        <FaTwitter />
-                        <FaYoutube />
+                    <div className="flex-row-wrapper">
+                        <SocialMediaList />
+                        <Link>
+                            <FaLocationArrow /> Track order
+                        </Link>
+                        <Link>
+                            <FaShoppingBasket /> Shop
+                        </Link>
+                        <Link>
+                            <FaCog /> Settings
+                        </Link>
                     </div>
                 </div>
             </div>

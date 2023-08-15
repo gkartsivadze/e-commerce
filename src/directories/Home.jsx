@@ -1,7 +1,9 @@
-export default function Home(params) {
+import ImageSlider from "../components/ImageSlider";
+
+export default function Home() {
      return (
         <section>
-            Hey@2
+            <ImageSlider />
         </section>
      )
 };
