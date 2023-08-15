@@ -1,9 +1,14 @@
+import GuaranteeSection from "../components/GuaranteeSection";
 import ImageSlider from "../components/ImageSlider";
+import ProductList from "../components/ProductList";
 
 export default function Home() {
      return (
-        <section>
+        <>
             <ImageSlider />
-        </section>
+            <GuaranteeSection />
+            <ProductList />
+            
+        </>
      )
 };

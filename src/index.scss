@@ -5,9 +5,8 @@
   --primary-600: #319DFF;
   --primary-700: #0077E4;
   --grey-600: #7D8FA9;
-  
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+
+  background-color: white;
 }
 
 :root,
@@ -16,6 +15,10 @@ button,
 select,
 textarea {
   font-family: 'Roboto', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
 }
 
 * {
@@ -31,7 +34,6 @@ button,
 input[type="button"] {
   cursor: pointer;
 
-  color: black;
   border: none;
   background-color: transparent;
 }
@@ -105,7 +107,6 @@ nav {
 
 footer {
   background-color: white;
-  color: black;
 
   display: flex;
   justify-content: center;
@@ -192,8 +193,64 @@ label {
   } 
 }
 
+.product_card {
+  display: grid;
+  gap: 1.25rem;
+
+  padding: 1.25rem;
+  border-radius: 0.4rem;
+  width: fit-content;
+
+  background: white;
+  color: black;
+
+  p {
+    font-size: 0.75rem;
+  }
+  a {
+    color: var(--primary-700);
+  }
+  span, a {
+    font-size: 1.25rem;
+  }
+  span {
+    font-weight: bold;
+  }
+  div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &.bundle {
+    min-width: 300px;
+    grid-template-columns: min-content 1fr;
+    row-gap: 1rem;
+    img {
+      place-self: center;
+      grid-column: 1 / 2;
+      grid-row: 1 / 4;
+
+      width: 70px;
+      height: 70px;
+    }
+    p {
+      grid-column: 2 / 3;
+    }
+    a {
+      grid-row: 2 / 3
+    }
+  }
+}
+
+main {
+  height: 200vh;
+}
 
 // ___________________ IMPROVE CLASSES
+
+.default-padding {
+  padding-inline: 240px;
+}
 
 .flex-row-wrapper {
   display: flex;

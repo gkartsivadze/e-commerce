@@ -2,7 +2,7 @@ import { FaCog, FaDollarSign, FaGlobe, FaLocationArrow, FaShoppingBasket } from 
 import { Link } from "react-router-dom";
 import SocialMediaList from "./SocialMediaList";
 
-export default function NavigationTop(params) {
+export default function NavigationTop() {
     return (
         <div className="navigation_top">
                 <div className="navigation_left">
