@@ -1,18 +1,16 @@
+import { useRef } from "react";
+
 import ProductCard from "./subcomponents/ProductCard";
 import img from "../../public/01.png"
-import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
+import SectionHeader from "./subcomponents/SectionHeader";
 
-export default function ProductList() {
+export default function ProductList({ header }) {
+    const listRef = useRef();
+
     return (
         <section className="product_list default-padding">
-            <div className="page-controller flex-row-wrapper">
-                <h1>Featured Products</h1>
-                <div>
-                    <button><FaArrowLeft /></button>
-                    <button><FaArrowRight /></button>
-                </div>
-            </div>
-            <div className="list-row">
+            <SectionHeader header={header} controllingItem={listRef} />
+            <div ref={listRef} className="list-row">
                 <ProductCard
                     name="Apple iPhone 14 Pro, LTPO Super Retina XDR OLED 6.1"
                     category={"Smartphones"}
@@ -20,25 +18,37 @@ export default function ProductList() {
                     price={1000}
                 />
                 <ProductCard
-                    name="Iphone"
+                    name="Apple iPhone 14 Pro, LTPO Super Retina XDR OLED 6.1"
                     category={"Smartphones"}
                     imgSrc={img}
                     price={1000}
                 />
                 <ProductCard
-                    name="Iphone"
+                    name="Apple iPhone 14 Pro, LTPO Super Retina XDR OLED 6.1"
                     category={"Smartphones"}
                     imgSrc={img}
                     price={1000}
                 />
                 <ProductCard
-                    name="Iphone"
+                    name="Apple iPhone 14 Pro, LTPO Super Retina XDR OLED 6.1"
                     category={"Smartphones"}
                     imgSrc={img}
                     price={1000}
                 />
                 <ProductCard
-                    name="Iphone"
+                    name="Apple iPhone 14 Pro, LTPO Super Retina XDR OLED 6.1"
+                    category={"Smartphones"}
+                    imgSrc={img}
+                    price={1000}
+                />
+                <ProductCard
+                    name="Apple iPhone 14 Pro, LTPO Super Retina XDR OLED 6.1"
+                    category={"Smartphones"}
+                    imgSrc={img}
+                    price={1000}
+                />
+                <ProductCard
+                    name="Apple iPhone 14 Pro, LTPO Super Retina XDR OLED 6.1"
                     category={"Smartphones"}
                     imgSrc={img}
                     price={1000}

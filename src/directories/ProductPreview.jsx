@@ -1,6 +1,7 @@
-export default function ProductPreview(params) {
+export default function ProductPreview() {
     return (
-        <section>Hey
-        </section>
+        <section>
+            Hey
+            </section>
     )
 };

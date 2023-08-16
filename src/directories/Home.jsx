@@ -1,3 +1,4 @@
+import AdSection from "../components/AdSection";
 import CategorySection from "../components/CategorySection";
 import GuaranteeSection from "../components/GuaranteeSection";
 import ImageSlider from "../components/ImageSlider";
@@ -8,8 +9,10 @@ export default function Home() {
         <>
             <ImageSlider />
             <GuaranteeSection />
-            <ProductList />
+            <ProductList header="Featured Products" />
             <CategorySection />
+            <ProductList header="Bestsellers" />
+            <AdSection />
         </>
      )
 };

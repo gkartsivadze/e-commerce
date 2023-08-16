@@ -30,7 +30,8 @@ a {
   margin: 0;
 }
 
-body, section {
+body,
+section {
   box-sizing: border-box;
 }
 
@@ -56,7 +57,7 @@ nav {
   background-color: white;
   color: var(--grey-600);
 
-  & > * {
+  &>* {
     padding-inline: 240px;
   }
 }
@@ -97,12 +98,13 @@ nav {
   gap: 2rem;
 
   background-color: var(--primary-600);
-  
+
   select {
     padding: 0.75rem 1rem;
     color: white;
-    
+
     font-weight: bold;
+
     &:not(:last-of-type) {
       border-right: 1px solid var(--primary-700);
     }
@@ -120,9 +122,11 @@ footer {
 
   .contact_info {
     width: 400px;
+
     h4 {
       margin-top: 2rem;
     }
+
     p {
       color: var(--grey-600);
     }
@@ -144,6 +148,7 @@ footer {
         margin-bottom: 1.5rem;
         color: black;
       }
+
       margin-bottom: 1rem;
       color: var(--grey-600);
     }
@@ -156,7 +161,7 @@ label {
     display: inline-flex;
     align-items: center;
     margin-right: 0.25rem;
-    
+
     * {
       color: var(--grey-600);
     }
@@ -175,7 +180,7 @@ label {
   * {
     border: none;
   }
-  
+
   input {
     background: transparent;
     outline: none;
@@ -194,7 +199,7 @@ label {
     &:hover {
       background-color: var(--primary-700);
     }
-  } 
+  }
 }
 
 .product_card {
@@ -211,31 +216,53 @@ label {
   background: white;
   color: black;
 
-  &:hover .price_buttons {
-    button:nth-of-type(1) {
-      top: -5rem;
+  &:hover {
+    
+    img {
+      transform: scale(1.1);
     }
-    button:nth-of-type(2) {
-      top: -2.5rem;
+
+    .price_buttons {
+      button:nth-of-type(1) {
+        top: -5rem;
+      }
+
+      button:nth-of-type(2) {
+        top: -2.5rem;
+      }
+
+      button:nth-of-type(3) {
+        background-color: blue;
+      }
     }
   }
 
   p {
     font-size: 0.75rem;
   }
+
   a {
     color: var(--primary-700);
   }
+
   span {
     font-size: 1.25rem;
   }
-  span, a {
+
+  span,
+  a {
     font-weight: bold;
   }
+
+  img {
+    transition: transform 0.3s;
+  }
+
   .price_buttons {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     div {
       position: relative;
       isolation: isolate;
@@ -251,11 +278,9 @@ label {
       button:nth-of-type(1):hover {
         color: var(--info-600);
       }
+
       button:nth-of-type(2):hover {
         color: red;
-      }
-      button:nth-of-type(3):hover {
-        background-color: blue;
       }
     }
   }
@@ -265,6 +290,7 @@ label {
     min-width: 300px;
     grid-template-columns: min-content 1fr;
     row-gap: 1rem;
+
     img {
       place-self: center;
       grid-column: 1 / 2;
@@ -273,17 +299,39 @@ label {
       width: 70px;
       height: 70px;
     }
+
     p {
       grid-column: 2 / 3;
     }
+
     a {
       grid-row: 2 / 3
     }
   }
 }
 
+.page-controller {
+  padding-block: 40px 20px;
+
+  h1 {
+    border-bottom: 1px solid var(--primary-700);
+  }
+
+  button {
+    display: inline-grid;
+    background-color: transparent;
+    color: black;
+
+    &:hover {
+      background-color: var(--grey-100);
+    }
+  }
+
+  margin-bottom: 10px;
+}
+
 main {
-  height: 200vh;
+  min-height: 200vh;
 }
 
 // ___________________ IMPROVE CLASSES

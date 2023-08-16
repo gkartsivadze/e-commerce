@@ -17,7 +17,7 @@ export default function ImageSlider() {
         
         let timeOut = setTimeout(() => {
             setCurrent(current == 2 ? 0 : (current + 1))
-        }, 3500)
+        }, 3000)
         sliderRef.current.scrollLeft = current * window.innerWidth;
         document.querySelectorAll(`input[name="image-slider"]`).forEach(elem => {
             if(elem.value == current) {
