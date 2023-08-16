@@ -4,18 +4,18 @@ import GuaranteeSection from "../components/GuaranteeSection";
 import ImageSlider from "../components/ImageSlider";
 import ProductList from "../components/ProductList";
 
-import { products } from "../data.json"
+import { electronics } from "../data.json"
 
 export default function Home() {
      return (
         <>
             <ImageSlider />
             <GuaranteeSection />
-            <ProductList header="Featured Products" products={products.filter(x => x.featured && x.discount == 0)} />
+            <ProductList header="Featured Products" products={electronics.filter(x => x.featured && x.discount == 0)} />
             <CategorySection />
-            <ProductList header="Bestsellers" products={products.filter(x => x.bestseller && x.discount == 0)} />
+            <ProductList header="Bestsellers" products={electronics.filter(x => x.bestseller && x.discount == 0)} />
             <AdSection />
-            <ProductList header="Big Deals" products={products.filter(x => x.discount != 0)} />
+            <ProductList header="Big Deals" products={electronics.filter(x => x.discount != 0)} />
         </>
      )
 };
