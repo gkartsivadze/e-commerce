@@ -4,7 +4,11 @@
 
   --primary-600: #319DFF;
   --primary-700: #0077E4;
+  --grey-100: #EEF0F4;
+  --grey-200: #DDE1E8;
   --grey-600: #7D8FA9;
+  --info-600: #129199;
+  --danger-600: #FF316A;
 
   background-color: white;
 }
@@ -195,14 +199,26 @@ label {
 
 .product_card {
   display: grid;
-  gap: 1.25rem;
+  gap: 1.5rem;
 
   padding: 1.25rem;
   border-radius: 0.4rem;
+  border: 1px solid var(--grey-100);
   width: fit-content;
+
+  width: 272px;
 
   background: white;
   color: black;
+
+  &:hover .price_buttons {
+    button:nth-of-type(1) {
+      top: -5rem;
+    }
+    button:nth-of-type(2) {
+      top: -2.5rem;
+    }
+  }
 
   p {
     font-size: 0.75rem;
@@ -210,17 +226,41 @@ label {
   a {
     color: var(--primary-700);
   }
-  span, a {
+  span {
     font-size: 1.25rem;
   }
-  span {
+  span, a {
     font-weight: bold;
   }
-  div {
+  .price_buttons {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    div {
+      position: relative;
+      isolation: isolate;
+
+      button:nth-of-type(2),
+      button:nth-of-type(1) {
+        position: absolute;
+        top: 0;
+        transition: top 0.3s;
+        z-index: -1;
+      }
+
+      button:nth-of-type(1):hover {
+        color: var(--info-600);
+      }
+      button:nth-of-type(2):hover {
+        color: red;
+      }
+      button:nth-of-type(3):hover {
+        background-color: blue;
+      }
+    }
   }
+
+
   &.bundle {
     min-width: 300px;
     grid-template-columns: min-content 1fr;
@@ -263,4 +303,16 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+}
+
+.icon_button {
+  color: white;
+  background-color: var(--grey-200);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+
+  transition: background-color 0.3s, color 0.3s;
 }
