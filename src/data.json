@@ -1,0 +1,284 @@
+{
+    "electronics": [
+        {
+            "id": 1,
+            "name": "Smartphone",
+            "discount": 10,
+            "img": "smartphone.jpg",
+            "category": "Mobile Devices",
+            "featured": true,
+            "bestseller": true
+        },
+        {
+            "id": 2,
+            "name": "Laptop",
+            "discount": 15,
+            "img": "laptop.jpg",
+            "category": "Computers",
+            "featured": true,
+            "bestseller": false
+        },
+        {
+            "id": 3,
+            "name": "Bluetooth Speaker",
+            "discount": 20,
+            "img": "bluetooth_speaker.jpg",
+            "category": "Audio Accessories",
+            "featured": true,
+            "bestseller": true
+        },
+        {
+            "id": 4,
+            "name": "Smart TV",
+            "discount": 12,
+            "img": "smart_tv.jpg",
+            "category": "TVs",
+            "featured": false,
+            "bestseller": true
+        },
+        {
+            "id": 5,
+            "name": "Digital Camera",
+            "discount": 18,
+            "img": "digital_camera.jpg",
+            "category": "Cameras",
+            "featured": false,
+            "bestseller": false
+        },
+        {
+            "id": 6,
+            "name": "Gaming Console",
+            "discount": 10,
+            "img": "gaming_console.jpg",
+            "category": "Gaming",
+            "featured": false,
+            "bestseller": false
+        },
+        {
+            "id": 7,
+            "name": "Headphones",
+            "discount": 25,
+            "img": "headphones.jpg",
+            "category": "Audio Accessories",
+            "featured": true,
+            "bestseller": false
+        },
+        {
+            "id": 8,
+            "name": "Tablet",
+            "discount": 10,
+            "img": "tablet.jpg",
+            "category": "Mobile Devices",
+            "featured": false,
+            "bestseller": true
+        },
+        {
+            "id": 9,
+            "name": "Wireless Earbuds",
+            "discount": 15,
+            "img": "wireless_earbuds.jpg",
+            "category": "Audio Accessories",
+            "featured": true,
+            "bestseller": true
+        },
+        {
+            "id": 10,
+            "name": "Smart Watch",
+            "discount": 10,
+            "img": "smart_watch.jpg",
+            "category": "Wearable Technology",
+            "featured": true,
+            "bestseller": false
+        },
+        {
+            "id": 11,
+            "name": "Desktop Computer",
+            "discount": 20,
+            "img": "desktop_computer.jpg",
+            "category": "Computers",
+            "featured": false,
+            "bestseller": true
+        },
+        {
+            "id": 12,
+            "name": "Wireless Router",
+            "discount": 10,
+            "img": "wireless_router.jpg",
+            "category": "Networking",
+            "featured": false,
+            "bestseller": false
+        },
+        {
+            "id": 13,
+            "name": "Portable Charger",
+            "discount": 12,
+            "img": "portable_charger.jpg",
+            "category": "Accessories",
+            "featured": false,
+            "bestseller": true
+        },
+        {
+            "id": 14,
+            "name": "Virtual Reality Headset",
+            "discount": 18,
+            "img": "vr_headset.jpg",
+            "category": "Gaming",
+            "featured": false,
+            "bestseller": false
+        },
+        {
+            "id": 15,
+            "name": "Wireless Mouse",
+            "discount": 15,
+            "img": "wireless_mouse.jpg",
+            "category": "Accessories",
+            "featured": true,
+            "bestseller": false
+        },
+        {
+            "id": 16,
+            "name": "Drones",
+            "discount": 20,
+            "img": "drones.jpg",
+            "category": "Cameras",
+            "featured": false,
+            "bestseller": true
+        },
+        {
+            "id": 17,
+            "name": "Home Theater System",
+            "discount": 10,
+            "img": "home_theater_system.jpg",
+            "category": "Audio Accessories",
+            "featured": true,
+            "bestseller": false
+        },
+        {
+            "id": 18,
+            "name": "E-book Reader",
+            "discount": 12,
+            "img": "ebook_reader.jpg",
+            "category": "E-readers",
+            "featured": false,
+            "bestseller": false
+        },
+        {
+            "id": 19,
+            "name": "Fitness Tracker",
+            "discount": 15,
+            "img": "fitness_tracker.jpg",
+            "category": "Wearable Technology",
+            "featured": true,
+            "bestseller": false
+        },
+        {
+            "id": 20,
+            "name": "Wireless Keyboard",
+            "discount": 10,
+            "img": "wireless_keyboard.jpg",
+            "category": "Accessories",
+            "featured": true,
+            "bestseller": true
+        },
+        {
+            "id": 21,
+            "name": "External Hard Drive",
+            "discount": 20,
+            "img": "external_hard_drive.jpg",
+            "category": "Storage",
+            "featured": false,
+            "bestseller": true
+        },
+        {
+            "id": 22,
+            "name": "Smart Home Hub",
+            "discount": 12,
+            "img": "smart_home_hub.jpg",
+            "category": "Home Automation",
+            "featured": false,
+            "bestseller": false
+        },
+        {
+            "id": 23,
+            "name": "Action Camera",
+            "discount": 18,
+            "img": "action_camera.jpg",
+            "category": "Cameras",
+            "featured": true,
+            "bestseller": false
+        },
+        {
+            "id": 24,
+            "name": "Gaming Mouse",
+            "discount": 15,
+            "img": "gaming_mouse.jpg",
+            "category": "Gaming",
+            "featured": false,
+            "bestseller": true
+        },
+        {
+            "id": 25,
+            "name": "Printers",
+            "discount": 10,
+            "img": "printers.jpg",
+            "category": "Printers",
+            "featured": true,
+            "bestseller": false
+        },
+        {
+            "id": 26,
+            "name": "Bluetooth Earphones",
+            "discount": 12,
+            "img": "bluetooth_earphones.jpg",
+            "category": "Audio Accessories",
+            "featured": false,
+            "bestseller": false
+        },
+        {
+            "id": 27,
+            "name": "Car GPS Navigation",
+            "discount": 20,
+            "img": "car_gps_navigation.jpg",
+            "category": "Navigation",
+            "featured": true,
+            "bestseller": true
+        },
+        {
+            "id": 28,
+            "name": "Video Doorbell",
+            "discount": 15,
+            "img": "video_doorbell.jpg",
+            "category": "Home Automation",
+            "featured": false,
+            "bestseller": false
+        },
+        {
+            "id": 29,
+            "name": "Computer Monitor",
+            "discount": 10,
+            "img": "computer_monitor.jpg",
+            "category": "Computers",
+            "featured": true,
+            "bestseller": true
+        },
+        {
+            "id": 30,
+            "name": "Wireless Charging Pad",
+            "discount": 12,
+            "img": "wireless_charging_pad.jpg",
+            "category": "Accessories",
+            "featured": false,
+            "bestseller": true
+        }
+    ],
+    "categories": [
+        "Mobile Devices",
+        "Computers",
+        "Audio Accessories",
+        "TVs",
+        "Cameras",
+        "Gaming",
+        "Accessories",
+        "Wearable Technology"
+    ]
+}
