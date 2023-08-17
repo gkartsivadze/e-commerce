@@ -258,6 +258,10 @@ label {
     transition: transform 0.3s;
   }
 
+  .price_wrapper {
+    display: grid;
+  }
+
   .price_buttons {
     display: flex;
     justify-content: space-between;
@@ -287,7 +291,7 @@ label {
 
 
   &.bundle {
-    min-width: 300px;
+    min-width: 350px;
     grid-template-columns: min-content 1fr;
     row-gap: 1rem;
 
@@ -295,18 +299,21 @@ label {
       place-self: center;
       grid-column: 1 / 2;
       grid-row: 1 / 4;
-
-      width: 70px;
-      height: 70px;
-    }
-
-    p {
-      grid-column: 2 / 3;
     }
 
     a {
-      grid-row: 2 / 3
+      grid-row: 1 / 2
     }
+
+    .item_stars {
+      grid-row: 2 / 3;
+    }
+    
+    .price_buttons {
+      grid-row: 3 / 4;
+      grid-column: 2 / 4;
+    }
+
   }
 }
 
@@ -363,4 +370,9 @@ main {
   height: 36px;
 
   transition: background-color 0.3s, color 0.3s;
+}
+
+.vertical-list {
+  display: grid;
+  gap: 20px;
 }

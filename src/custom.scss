@@ -178,3 +178,19 @@
         }
     }
 }
+
+#brands_section {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding-block: 40px;
+}
+
+#all_products_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-block: 10px 60px;
+    
+    background-color: var(--grey-100);
+}
