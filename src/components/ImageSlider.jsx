@@ -16,20 +16,22 @@ export default function ImageSlider() {
     useEffect(() => {
         
         let timeOut = setTimeout(() => {
-            setCurrent(current == 2 ? 0 : (current + 1))
+            setCurrent(current < 2 ? 1 + parseInt(current) : 0)
         }, 3000)
         sliderRef.current.scrollLeft = current * window.innerWidth;
-        document.querySelectorAll(`input[name="image-slider"]`).forEach(elem => {
-            if(elem.value == current) {
-                elem.checked = true;
-            } else {
-                elem.checked = false;
-            }
-        });
         return () => {
             clearTimeout(timeOut)
         }
     }, [current])
+
+    document.querySelectorAll(`input[name="image-slider"]`).forEach(elem => {
+        console.log(current);
+        if(elem.value == current) {
+            elem.checked = true;
+        } else {
+            elem.checked = false;
+        }
+    });
 
     return (
         <section id="slider_wrapper">

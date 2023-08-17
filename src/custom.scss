@@ -94,6 +94,33 @@
 }
 
 .product_list {
+    
+    .list-wrapper {
+        position: relative;
+        &:before, &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            background: linear-gradient(var(--deg, 0deg), rgba(0, 0, 0, 0.2), transparent);
+            pointer-events: none;
+
+            z-index: 1;
+            transition: width 0.3s;
+        }
+
+        &::before {
+            left: 0;
+            --deg: 90deg;
+            width: var(--left-width, 0)
+        }
+        
+        &::after {
+            right: 0;
+            --deg: -90deg;
+            width: var(--right-width, 0)
+        }
+    }
 
     .list-row {
         display: flex;
