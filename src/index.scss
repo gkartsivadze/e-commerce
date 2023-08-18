@@ -54,6 +54,8 @@ select {
 }
 
 nav {
+  position: relative;
+
   background-color: white;
   color: var(--grey-600);
 
@@ -92,14 +94,16 @@ nav {
 }
 
 .navigation_bottom {
-  display: flex;
+  display: grid;
+  grid-auto-flow: column;
   justify-content: center;
+  grid-auto-columns: 10rem;
 
   background-color: var(--primary-600);
 
-  select {
-    padding: 0.75rem 1rem;
-    width: fit-content;
+  button {
+    padding-block: 0.75rem;
+    width: 100%;
     color: white;
     
     option {
@@ -111,6 +115,55 @@ nav {
     &:not(:last-of-type) {
       border-right: 1px solid var(--primary-700);
     }
+  }
+}
+
+.sub_navigation {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  height: 0;
+  overflow: hidden;
+
+  background: white;
+
+  z-index: 1;
+  
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  place-items: center top;
+
+  transition: 0.3s;
+  
+  &.open {
+    height: 30rem;
+    padding-block: 2rem;
+
+    box-shadow: 0 1rem 1rem var(--grey-200);
+  }
+
+  h1 {
+    color: black;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  li {
+    margin-block: 0.5rem;
+
+    &:hover {
+      color: black;
+    }
+  }
+
+  img {
+    width: 25rem;
+    max-height: 30rem;
+
+    object-fit: cover;
   }
 }
 

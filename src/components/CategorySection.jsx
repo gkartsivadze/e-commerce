@@ -1,6 +1,5 @@
 import CategoryCard from "./subcomponents/CategoryCard";
 
-import tvImage from "../../public/tv.png"
 import SectionHeader from "./subcomponents/SectionHeader";
 
 export default function CategorySection({ categories }) {
@@ -9,7 +8,7 @@ export default function CategorySection({ categories }) {
 
         <SectionHeader header="Categories" />
         <section className="category_list">
-            { categories.map(category => <CategoryCard key={category.id} name={category.name} img={tvImage} />) }
+            { categories.map(category => <CategoryCard key={category.id} category={category} />) }
         </section>
         </section>
     )

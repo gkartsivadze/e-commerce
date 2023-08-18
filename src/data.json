@@ -555,6 +555,7 @@
     {
       "id": 1,
       "name": "Mobile Devices",
+      "img": "./public/phone.png",
       "subcategories": [
         {
           "name": "Smartphones",
@@ -573,6 +574,7 @@
     {
       "id": 2,
       "name": "Computers",
+      "img": "./public/computer.png",
       "subcategories": [
         {
           "name": "Laptops",
@@ -599,6 +601,7 @@
     {
       "id": 3,
       "name": "Audio Accessories",
+      "img": "./public/audio.png",
       "subcategories": [
         {
           "name": "Speakers",
@@ -628,6 +631,7 @@
     {
       "id": 4,
       "name": "TVs",
+      "img": "./public/tv.png",
       "subcategories": [
         {
           "name": "Smart TVs",
@@ -641,6 +645,7 @@
     {
       "id": 5,
       "name": "Cameras",
+      "img": "./public/camera.png",
       "subcategories": [
         {
           "name": "Digital Cameras",
@@ -666,6 +671,7 @@
     {
       "id": 6,
       "name": "Gaming",
+      "img": "./public/gaming.png",
       "subcategories": [
         {
           "name": "Consoles",
@@ -688,6 +694,7 @@
     {
       "id": 7,
       "name": "Accessories",
+      "img": "./public/accessories.png",
       "subcategories": [
         {
           "name": "Chargers",
@@ -714,6 +721,7 @@
     {
       "id": 8,
       "name": "Wearable Technology",
+      "img": "./public/wearable.png",
       "subcategories": [
         {
           "name": "Smart Watches",

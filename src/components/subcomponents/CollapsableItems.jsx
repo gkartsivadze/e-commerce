@@ -6,7 +6,7 @@ export default function CollapsableItems({ categories }) {
     return (
         <>
             {
-                categories.map(category => <CollapsableItem category={category} />)
+                categories.map(category => <CollapsableItem key={category.id} category={category} />)
             }
         </>
     )
@@ -18,8 +18,7 @@ function CollapsableItem({ category }) {
     function handleChange(e) {
         setOpened(e.target.checked)
     }
-
-    console.log(opened);
+    
     return (
         <div className={`filter_list ${opened ? "open" : ""}`}>
             <label>
@@ -28,7 +27,7 @@ function CollapsableItem({ category }) {
                 <FaArrowDown />
             </label>
             <ul>
-                {category.subcategories.map(subcategory => <li>{ subcategory.name }</li>)}
+                {category.subcategories.map((subcategory,ind) => <li key={ind}>{ subcategory.name }</li>)}
             </ul>
         </div>
     )
