@@ -97,14 +97,15 @@ nav {
   display: grid;
   grid-auto-flow: column;
   justify-content: center;
-  grid-auto-columns: 10rem;
+  grid-auto-columns: 1fr;
 
   background-color: var(--primary-600);
 
   button {
-    padding-block: 0.75rem;
+    padding: 0.75rem 0.75rem;
     width: 100%;
     color: white;
+    text-align: left;
     
     option {
       color: black;

@@ -10,7 +10,7 @@ import { electronics, categories } from "../data.json"
 
 export default function Home() {
      return (
-        <>
+        <main>
             <ImageSlider />
             <GuaranteeSection />
             <ProductList header="Featured Products" products={electronics.filter(x => x.featured && x.discount == 0)} />
@@ -20,6 +20,6 @@ export default function Home() {
             <ProductList header="Big Deals" products={electronics.filter(x => x.discount != 0)} />
             <BrandGrid />
             <ProductAllList products={electronics} />
-        </>
+        </main>
      )
 };

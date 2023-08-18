@@ -1,5 +1,6 @@
 import { useState } from "react"
 import { categories } from "../../data.json"
+import { Link } from "react-router-dom";
 
 export default function NavigationBottom() {
     const [current, setCurrent] = useState(1);
@@ -35,7 +36,7 @@ export default function NavigationBottom() {
                 { i.name }
             </h1>
             <ul>
-                { i.subcategories.map(subcategory => <li key={subcategory.name}>{ subcategory.name }</li>) }
+                { i.subcategories.map(subcategory => <li key={subcategory.name}><Link to="shop">{ subcategory.name }</Link></li>) }
             </ul>
             <img src={i.img} alt="" />
         </div>

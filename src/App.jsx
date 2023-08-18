@@ -11,9 +11,7 @@ function App() {
     <>
       <Navigation />
       <SideBar />
-      <main>
-        <Outlet />
-      </main>
+      <Outlet />
       <Footer />
     </>
   )
