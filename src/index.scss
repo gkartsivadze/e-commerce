@@ -95,13 +95,16 @@ nav {
   display: flex;
   justify-content: center;
 
-  gap: 2rem;
-
   background-color: var(--primary-600);
 
   select {
     padding: 0.75rem 1rem;
+    width: fit-content;
     color: white;
+    
+    option {
+      color: black;
+    }
 
     font-weight: bold;
 
@@ -375,4 +378,78 @@ main {
 .vertical-list {
   display: grid;
   gap: 20px;
+}
+
+#side_menu {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 280px;
+  height: 100vh;
+  padding-block: 66px;
+  background-color: white;
+  transform: translate(-100%);
+  overflow-y: auto;
+  box-sizing: border-box;
+
+  z-index: 10;
+
+  
+  transition: 0.3s;
+  
+  .flex-row-wrapper {
+    padding-right: 10px;
+  }
+  
+  &.open {
+    transform: translate(0);
+    box-shadow: 0 0 1rem var(--grey-200);
+  }
+
+}
+
+.filter_list {
+  display: grid;
+  grid-template-rows: min-content 0fr;
+
+  transition: grid-template-rows 0.3s;
+
+
+  label {
+    padding: 20px;
+    border-bottom: 1px solid var(--grey-200);
+    cursor: pointer;
+
+    input {
+      visibility: hidden;
+
+      &:checked + svg {
+        transform: rotate(180deg);
+      }
+    }
+
+    svg {
+      transition: transform 0.3s;
+      float: right;
+    }
+  }
+  ul {
+    padding-inline: 20px;
+    li {
+      padding-block: 11px;
+      color: var(--grey-600);
+      &:hover {
+        color: black;
+      }
+    }
+  }
+  
+  &.open {
+    grid-template-rows: min-content 1fr;
+  }
+
+  ul {
+    overflow: hidden;
+    list-style: none
+  }
 }

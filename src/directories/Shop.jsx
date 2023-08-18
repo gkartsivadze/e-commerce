@@ -1,4 +1,4 @@
-export default function ProductPreview() {
+export default function Shop() {
     return (
         <section>
             Hey

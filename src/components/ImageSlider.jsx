@@ -25,7 +25,6 @@ export default function ImageSlider() {
     }, [current])
 
     document.querySelectorAll(`input[name="image-slider"]`).forEach(elem => {
-        console.log(current);
         if(elem.value == current) {
             elem.checked = true;
         } else {
