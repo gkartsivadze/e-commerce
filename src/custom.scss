@@ -247,3 +247,28 @@
 #product_grid {
     width: 100%;
 }
+
+.grid_view_controller {
+    margin-top: 2rem;
+
+    input {
+        visibility: hidden;
+        position: absolute;
+
+        &:checked + label {
+            background-color: var(--grey-100);
+        }
+    }
+    label {
+        border-radius: 6px;
+        margin-inline: 0.5rem;
+        padding: 0.5rem;
+        cursor: pointer;
+    }
+}
+
+#item_grid_list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}

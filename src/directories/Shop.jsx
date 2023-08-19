@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
-import { categories } from '../data.json'
+import { electronics, categories } from '../data.json'
 import HeadController from '../components/subcomponents/HeadController'
+import ItemGrid from '../components/subcomponents/ItemGrid'
 
 export default function Shop() {
     const [current, setCurrent] = useState(1)
@@ -17,7 +18,8 @@ export default function Shop() {
                                 name="category"
                                 type="radio"
                                 defaultChecked={category.id == 1}
-                                onClick={() => setCurrent(category.id)} />
+                                onClick={() => setCurrent(category.id)}
+                            />
                             <label
                                 htmlFor={`category_controller_${category.id}`}
                             >
@@ -36,6 +38,7 @@ export default function Shop() {
             </aside>
             <section id="product_grid">
                 <HeadController />
+                <ItemGrid data={electronics}  />
             </section>
         </main>
     )
