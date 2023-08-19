@@ -222,3 +222,28 @@
     
     background-color: var(--grey-100);
 }
+
+#filter_panel {
+    .grid-column {
+        background-color: var(--grey-100);
+        padding: 20px;
+        gap: 20px;
+
+        input {
+            visibility: hidden;
+            position: absolute;
+            &:checked + label {
+                color: black;
+                font-weight: bold;
+            }
+        }
+        label {
+            color: var(--grey-600);
+            cursor: pointer;
+        }
+    }
+}
+
+#product_grid {
+    width: 100%;
+}
