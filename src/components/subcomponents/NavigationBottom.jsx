@@ -13,7 +13,7 @@ export default function NavigationBottom() {
             setOpen(false)
         } else {
             setCurrent(id);
-            setOpen(true)
+            setOpen(true);
         }
     }
 
@@ -36,7 +36,7 @@ export default function NavigationBottom() {
                 { i.name }
             </h1>
             <ul>
-                { i.subcategories.map(subcategory => <li key={subcategory.name}><Link to="shop">{ subcategory.name }</Link></li>) }
+                { i.subcategories.map(subcategory => <li key={subcategory.name}><Link to="shop" state={{ category: i.name, subcategory: subcategory.name }}>{ subcategory.name }</Link></li>) }
             </ul>
             <img src={i.img} alt="" />
         </div>

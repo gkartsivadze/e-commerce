@@ -260,12 +260,17 @@ label {
   padding: 1.25rem;
   border-radius: 0.4rem;
   border: 1px solid var(--grey-100);
-  width: fit-content;
 
   width: 272px;
 
   background: white;
   color: black;
+
+  img {
+    object-fit: cover;
+    max-width: 100%;
+    place-self: center;
+  }
 
   &:hover {
     
