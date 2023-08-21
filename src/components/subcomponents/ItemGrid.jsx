@@ -1,9 +1,9 @@
 import ProductCard from "./ProductCard";
 import img from "../../../public/product.png"
 
-export default function ItemGrid({ data }) {
+export default function ItemGrid({ data, gridView }) {
     return (
-        <div id="item_grid_list">
+        <div id="item_grid_list" className={gridView ? "" : " grid_column" }>
             {
                 data.map(item => <ProductCard
                                     key={item.id}
@@ -12,6 +12,7 @@ export default function ItemGrid({ data }) {
                                     price={item.price}
                                     discount={item.discount}
                                     imgSrc={img}
+                                    bundle={!gridView}
                                     />)
             }
         </div>

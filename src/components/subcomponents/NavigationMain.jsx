@@ -12,7 +12,7 @@ function NavigationMain({ openMenu, menuState, closeMenu }) {
             <div>
                 <button
                     onClick={menuState ? closeMenu : openMenu}><FaBars /></button>
-                <img src={logoImg} />
+                <Link to="/"><img src={logoImg} /></Link>
             </div>
             <CustomInput type="search" />
             <div className="flex-row-wrapper">
